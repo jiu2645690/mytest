@@ -3,7 +3,7 @@
 # 数据库 mysql
 # 服务器部署说明：
  ##开发配置
-   -1.安装 开发工具 IntelliJ IDEA  x64
+   -1安装 开发工具 IntelliJ IDEA  x64
    -2.打开 IntelliJ IDEA  x64，点击右上角file=》open  找到项目所在位置。选择项目所在文件夹，点击OK 
    -3.安装MySQL，（http://www.pc6.com/softview/SoftView_28585.html 下载 按照图片说明，进行安装。并设置好 数据库账号 密码
    -4.在目录中找到 src=》resource 下的 application.yml。查看datasource 下的url 配置的。
