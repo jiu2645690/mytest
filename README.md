@@ -9,7 +9,10 @@
    - 3.安装MySQL，（http://www.pc6.com/softview/SoftView_28585.html 下载 按照图片说明，进行安装。并设置好 数据库账号 密码
    - 4.在目录中找到 src=》resource 下的 application.yml。查看datasource 下的url 配置的。
    ```
-   dbc:mysql://101.37.124.77:3306/xiaoshitest（101.37.124.77 ：数据库服务器的IP（即：第二步 数据安装） 本机127.0.0.1，3306 mysql 的端口，      xiaoshitest 数据库名称）
+     dbc:mysql://101.37.124.77:3306/xiaoshitest（101.37.124.77 ：
+     数据库服务器的IP（即：第二步 数据安装） 本机127.0.0.1，
+     3306 mysql 的端口，      
+     xiaoshitest 数据库名称）
      username: （第二部设置的数据库账号）
      password: （第二部设置的数据库密码）
    ```
@@ -19,14 +22,18 @@
    - 8 发布到服务器. 将打包文件上传到服务器。 打开dos命令窗口 定位 jar包所在文件， 输入命令： java -jar order-0.0.1-SNAPSHOT.jar输入回车
         则项目启动。
    - 9，反向代理设置 上传 nginx 到服务器。 在nginx 文件下 找到 /conf/nginx.conf
+      http server 配置
      ```
-     在 http server 配置
+      http server 
       listen       80;//端口   http 访问的端口
         server_name  www.liwi.vip  http文件域名
-     在HTTPS server （小程序端使用）
-    server_name www.liwi.vip  //配置 https 的域名
-    ssl_certificate        C:/ssl/215053788620195.pem //证书文件
-    ssl_certificate_key  C:/ssl/215053788620195.key;  //证书加密文件
+     ```
+     HTTPS server 配置
+     ```
+      HTTPS server 
+      server_name www.liwi.vip  //配置 https 的域名
+      ssl_certificate        C:/ssl/215053788620195.pem //证书文件
+      ssl_certificate_key  C:/ssl/215053788620195.key;  //证书加密文件
     ```
   配置完成后启动 nginx.exe 即可
 
