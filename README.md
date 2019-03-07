@@ -34,7 +34,7 @@
       server_name www.liwi.vip  //配置 https 的域名
       ssl_certificate        C:/ssl/215053788620195.pem //证书文件
       ssl_certificate_key  C:/ssl/215053788620195.key;  //证书加密文件
-    ```
+     ```
   配置完成后启动 nginx.exe 即可
 
 # 目录结构
