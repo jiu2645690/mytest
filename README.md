@@ -3,7 +3,9 @@
 # 数据库 mysql
 # 服务器部署说明：
   ## 开发配置 
-   -1 安装 开发工具 IntelliJ IDEA  x64
+   - 1：安装 开发工具 IntelliJ IDEA  x64
+   - 2：打开 IntelliJ IDEA  x64，点击右上角file=》open  找到项目所在位置。选择项目所在文件夹，点击OK 
+
 # 目录结构
   ## mian  //项目主体程序
    ### config  //项目配置文件
