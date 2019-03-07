@@ -10,14 +10,12 @@
    dbc:mysql://101.37.124.77:3306/xiaoshitest（101.37.124.77 ：数据库服务器的IP（即：第二步 数据安装） 本机127.0.0.1，3306 mysql 的端口，      xiaoshitest 数据库名称）
      username: （第二部设置的数据库账号）
      password: （第二部设置的数据库密码）
-    - 5.启动redis-server 中 redis-server.exe 看到启动 dos启动框，则说明启动，如果闪一下，没有启动
-    可以通过dos命令：1 打开dos窗口，定位到redis-sever文件下，输入 redis-server.exe redis.windows.conf
-     - 6.在 IntelliJ IDEA  x64启动。 
-     - 7.打包 打开dos命令窗口，定位到 项目目录， 输入 mvn clean package -DskipTests。出现：bulid sucess 则表示完成。
-       打开 目录下target 文件夹 找到 order-0.0.1-SNAPSHOT.jar 。到此打包结束。
-      - 8 发布到服务器. 将打包文件上传到服务器。 打开dos命令窗口 定位 jar包所在文件， 输入命令： java -jar order-0.0.1-SNAPSHOT.jar输入回车
+   - 5.启动redis-server 中 redis-server.exe 看到启动 dos启动框，则说明启动，如果闪一下，没有启动 可以通过dos命令：1 打开dos窗口，定位到redis-sever文件下，输入 redis-server.exe redis.windows.conf
+   - 6.在 IntelliJ IDEA  x64启动。 
+   - 7.打包 打开dos命令窗口，定位到 项目目录， 输入 mvn clean package -DskipTests。出现：bulid sucess 则表示完成。打开 目录下target 文件夹 找到 order-0.0.1-SNAPSHOT.jar 。到此打包结束。
+   - 8 发布到服务器. 将打包文件上传到服务器。 打开dos命令窗口 定位 jar包所在文件， 输入命令： java -jar order-0.0.1-SNAPSHOT.jar输入回车
         则项目启动。
-      - 9，反向代理设置 上传 nginx 到服务器。 在nginx 文件下 找到 /conf/nginx.conf
+   - 9，反向代理设置 上传 nginx 到服务器。 在nginx 文件下 找到 /conf/nginx.conf
    在 http server
    配置
      listen       80;//端口   http 访问的端口
