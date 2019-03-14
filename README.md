@@ -35,8 +35,16 @@
       ssl_certificate        C:/ssl/215053788620195.pem //证书文件
       ssl_certificate_key  C:/ssl/215053788620195.key;  //证书加密文件
      ```
-  配置完成后启动 nginx.exe 即可
-
+      配置完成后启动 nginx.exe 即可
+    - 10 在浏览器中输入 http server 配置的server_name或者 HTTPS server 配置server_name出现一下文字
+    ``` 
+    Whitelabel Error Page
+    This application has no explicit mapping for /error, so you are seeing this as a fallback.
+    Thu Mar 07 12:48:14 CST 2019
+    There was an unexpected error (type=Not Found, status=404).
+    No message available
+    ```
+      接口发布成功。
 # 目录结构
   ## mian  //项目主体程序
    ### config  //项目配置文件
