@@ -36,7 +36,7 @@
       ssl_certificate_key  C:/ssl/215053788620195.key;  //证书加密文件
      ```
       配置完成后启动 nginx.exe 即可
-    - 10 在浏览器中输入 http server 配置的server_name或者 HTTPS server 配置server_name出现一下文字
+  - 10 在浏览器中输入 http server 配置的server_name或者 HTTPS server 配置server_name出现一下文字
     ``` 
     Whitelabel Error Page
     This application has no explicit mapping for /error, so you are seeing this as a fallback.
