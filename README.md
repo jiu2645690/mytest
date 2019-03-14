@@ -87,12 +87,12 @@
  > - ### dao 数据访问层     
  > - ### exception  异常机制
  > - ### service  业务逻辑层
- > -### service  pojo
+ > - ### service  pojo
  >> - #### dto //返回实体类 
- >> -    #### entity  //数据库实体
- >> -    #### form //上传的表单
- >> -    #### model //商用返回的实体 
- >> -    #### Task //定时计划任务任务
+ >> - #### entity  //数据库实体
+ >> - #### form //上传的表单
+ >> - #### model //商用返回的实体 
+ >> - #### Task //定时计划任务任务
  > - ### util   工具类
  >> -   #### DateUtil   //日期类工具
  >> -   #### EncryptDecryptByKeyUtil   //加密解密工具类
