@@ -5,7 +5,7 @@
   ## 开发配置 
    - 1安装 开发工具 IntelliJ IDEA  x64
       
-   - 2.打开 IntelliJ IDEA  x64，点击右上角file=》open  找到项目所在位置。选择项目所在文件夹，点击OK 
+   - 2.打开 IntelliJ IDEA  x64，点击右上角file= >open  找到项目所在位置。选择项目所在文件夹，点击OK 
    - 3.安装MySQL，（http://www.pc6.com/softview/SoftView_28585.html 下载 按照图片说明，进行安装。并设置好 数据库账号 密码
    - 4.在目录中找到 src=》resource 下的 application.yml。查看datasource 下的url 配置的。
    ```
@@ -45,8 +45,26 @@
     No message available
     ```
       接口发布成功。
+  - 11 其他相关：windos 连接linux ： 点击开始 输入powerShell，打开应用程序。
+    输入名利
+     ``` 
+     ssh -i "xiaoshi-keypair.pem" （pem 文件所在的相对路径）
+      ec2-user@ec2-54-214-97-45.us-west-2.compute.amazonaws.com （服务器地址）
+    ``` 
+    当出现
+    ``` 
+    Last login: Thu Mar 14 04:26:47 2019 from 50-46-123-113.evrt.wa.frontiernet.net
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+      https://aws.amazon.com/amazon-linux-2/
+    [ec2-user@ip-172-31-29-149 ~]$
+     ```
+    
 # 目录结构
-  ## mian  //项目主体程序
+  ## main  //项目主体程序
    ### config  //项目配置文件
     #### BuketConfig  //s3 存储相关配置
     #### DataSourceConfig  //数据库相关配置
